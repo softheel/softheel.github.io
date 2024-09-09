@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script defer src="js/fontawesome-all.min.js"></script>
+</head>
+
+<body>
+    <!-- меню -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Small Business</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Change language
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">RU</a></li>
+                        <li><a class="dropdown-item" href="#">EN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <div class="container my-3 my-sm-5">
+        <h1 class="text-center mb-sm-4 display-1">Meet the team</h1>
+
+        <div class="row">
+            <!-- address -->
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <h2>Address:</h2>
+                <ul class="list-unstyled">
+                    <li><b>Company name</b></li>
+                    <li>Street name</li>
+                    <li>ZIP code and city</li>
+                    <li><i class="fas fa-phone text-dark"></i> <a href="#">(123)456 78 90</a></li>
+                    <li><i class="fas fa-envelope text-dark"></i> <a href="#">mail@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <!-- opening hours -->
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <h2>Opening hours:</h2>
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <td class="ps-0" scope="col">Monday-Thursday</td>
+                            <td class="text-end" scope="col">10 am - 6 pm</td>
+                        </tr>
+                        <tr>
+                            <td class="ps-0" scope="row">Friday-Saturday</td>
+                            <td class="text-end">10 am - 10 pm</td>
+                        </tr>
+                        <tr>
+                            <td class="ps-0" scope="row">Sunday</td>
+                            <td class="text-end">10 am - 8 pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- form -->
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <h2>Send us a message:</h2>
+                <!-- <form class="row">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                        <label for="validationCustomUsername" class="form-label">Name</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-user text-dark"></i></span>
+                            <input type="text" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" placeholder="Name" required>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
+                        </div>
+                    </div>
+
+                </form> -->
+
+                <form class="row g-3">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label for="validationDefault01" class="form-label">Name:</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-user"></i></span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"
+                                aria-describedby="inputGroupPrepend2" placeholder="Имя">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label for="validationDefault01" class="form-label">Email:</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2"><i
+                                    class="fas fa-envelope"></i></span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"
+                                aria-describedby="inputGroupPrepend2" placeholder="example@email.com">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label for="validationDefault01" class="form-label">Telephone:</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-phone"></i> </span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"
+                                aria-describedby="inputGroupPrepend2" placeholder="0123456789">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <label for="validationDefault04" class="form-label">Department:</label>
+
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-house-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z" />
+                                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z" />
+                                </svg></span>
+                            <select class="form-select" id="validationDefault04" required>
+                                <option class="text text-muted" selected disabled value="">- select here -</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <p>Please select the recipient og ypur message.</p>
+                    </div>
+                    <div>
+                        <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-brush-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04" />
+                                </svg></span>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"
+                                placeholder="Write your message here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <button class="btn btn-secondary" type="submit">Reset</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+            <!-- map -->
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <h2>Where to find us:</h2>
+                <img class="img-fluid" src="./img/800x600.png">
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="bg-light small">
+        <div class="container py-3 py-sm-5">
+            <div class="row">
+                <!-- Quick links -->
+                <div class="col-md-3 col-sm-6 col-12">
+                    <h6>Quick links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./team.html">Team</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Information -->
+                <div class="col-md-3 col-sm-6 col-12">
+                    <h6>Information</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Legal information</a></li>
+                        <li><a href="#">Job opportunities</a></li>
+                        <li><a href="#">Frequently asked questions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow us -->
+                <div class="col-md-3 col-sm-6 col-12">
+                    <h6>Follow us</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fab fa-facebook text-primary"></i> <a href="#">Facebook</a></li>
+                        <li><i class="fab fa-instagram text-primary"></i> <a href="#">Instagram</a></li>
+                        <li><i class="fab fa-twitter text-primary"></i> <a href="#">Twitter</a></li>
+                        <li><i class="fab fa-youtube text-primary"></i> <a href="#">YouTube</a></li>
+                        <li><i class="fab fa-linkedin text-primary"></i> <a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+
+                <!-- location -->
+                <div class="col-md-3 col-sm-6 col-12">
+                    <h6>Our location</h6>
+                    <ul class="list-unstyled">
+                        <li><b>Company name</b></li>
+                        <li>Street name</li>
+                        <li>ZIP code and city</li>
+                        <li><i class="fas fa-phone text-dark"></i> <a href="#">(123)456 78 90</a></li>
+                        <li><i class="fas fa-envelope text-dark"></i> <a href="#">mail@gmail.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <p class="text-center mb-0 pb-0">&copy; 2020 Company Name All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
